@@ -13,17 +13,16 @@ print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
+x.extend(y)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
-x.append(5)
-x.extend(y)
+x.pop(len(x) - 3)
 print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
-x.pop(len(x) - 1)
 x.insert(len(x) - 1, 99)
 print(x)
 
